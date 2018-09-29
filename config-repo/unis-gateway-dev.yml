@@ -1,5 +1,5 @@
 server:
-  port: 9998
+  port: 9999
 
 spring:
   zipkin:
@@ -72,7 +72,6 @@ urls:
     - /oa/oaMeeting/downLoadFile/**
   base:
     - /admin/user/info
-    - /admin/user/info8
     - /admin/menu/userMenu
     - /admin/menu/userTree
     - /admin/menu/allTree
