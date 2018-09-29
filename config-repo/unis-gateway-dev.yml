@@ -54,9 +54,6 @@ urls:
     - /auth/**
     - /admin/code/*
     - /admin/smsCode/*
-    - /admin/user/info
-    - /admin/menu/userMenu
-    - /admin/menu/userTree
     - /swagger-resources/**
     - /swagger-ui.html
     - /*/v2/api-docs
@@ -73,6 +70,14 @@ urls:
     - /oa/oaArticle/downLoadFile/**
     - /oa/oaContract/downLoadFile/**
     - /oa/oaMeeting/downLoadFile/**
+  base:
+    - /admin/user/info
+    - /admin/menu/userMenu
+    - /admin/menu/userTree
+    - /oa/oaCalendarMemo/*
+    - /oa/oaNotice/indexOaNoticeList
+    - /admin/dept/tree
+    - /admin/dict/dictPage
 fdfs:
   file-host: http://49.4.12.152:8888/
   tracker-list:
