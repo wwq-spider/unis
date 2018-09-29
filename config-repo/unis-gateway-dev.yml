@@ -72,6 +72,7 @@ urls:
     - /oa/oaMeeting/downLoadFile/**
   base:
     - /admin/user/info
+    - /admin/user/info1
     - /admin/menu/userMenu
     - /admin/menu/userTree
     - /admin/menu/allTree
