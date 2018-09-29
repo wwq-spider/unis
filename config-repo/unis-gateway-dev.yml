@@ -74,6 +74,7 @@ urls:
     - /admin/user/info
     - /admin/menu/userMenu
     - /admin/menu/userTree
+    - /admin/menu/allTree
     - /oa/oaCalendarMemo/*
     - /oa/oaNotice/indexOaNoticeList
     - /admin/dept/tree
