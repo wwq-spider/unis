@@ -66,6 +66,7 @@ urls:
     - /programGuide/tbSchemeController/downLoadFile/**
     - /programGuide/tbSchemeController/onlinePreview/**
     - /programGuide/tbGuide/downLoadFile/**
+    - /programGuide/checkRepeat/exportCheckRepeat/**
     - /programGuide/tbGuide/onlinePreview/**
     - /oa/oaArticleFile/onlinePreview/**
     - /project/tbProjectLibrary/**
