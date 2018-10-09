@@ -63,6 +63,7 @@ urls:
     - /expert/tbExpert/exportExpertXls/**
     - /programGuide/tbSchemeController/downLoadFile/**
     - /programGuide/tbSchemeController/onlinePreview/**
+    - /programGuide/checkRepeat/exportCheckRepeat/**
     - /programGuide/tbGuide/downLoadFile/**
     - /programGuide/tbGuide/onlinePreview/**
     - /project/tbProjectLibrary/**
