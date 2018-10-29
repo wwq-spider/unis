@@ -61,6 +61,7 @@ urls:
     - /webjars/**
     - /project/tbProjectDocument/**
     - /expert/tbExpert/exportExpertXls/**
+    - /expert/tbTemporaryPersonnel/exportExpertXls/**
     - /programGuide/tbSchemeController/downLoadFile/**
     - /programGuide/tbSchemeController/onlinePreview/**
     - /programGuide/checkRepeat/exportCheckRepeat
