@@ -1,14 +1,15 @@
 server:
   port: 9999
-
 spring:
+  kafka:
+    bootstrap-servers:
+      - 49.4.12.198:9092
   zipkin:
     rabbitmq:
       queue: zipkin
   sleuth:
     sampler:
       percentage: 0.2
-
 zuul:
 #  servlet-path: /
   ribbon:
@@ -29,8 +30,10 @@ zuul:
         limit: 100
         quota: 100
         refresh-interval: 3
-
 security:
+  #认证服务器地址
+  auth:
+    server: http://localhost:3000
   validate:
     code: false
   sessions: stateless
@@ -54,19 +57,34 @@ urls:
     - /auth/**
     - /admin/code/*
     - /admin/smsCode/*
-    - /admin/user/info
-    - /admin/menu/userTree
     - /swagger-resources/**
     - /swagger-ui.html
     - /*/v2/api-docs
     - /swagger/api-docs
     - /webjars/**
     - /project/tbProjectDocument/**
+    - /project/tbProjectDict/**
     - /expert/tbExpert/exportExpertXls/**
+    - /expert/tbTemporaryPersonnel/exportExpertXls/**
     - /programGuide/tbSchemeController/downLoadFile/**
     - /programGuide/tbSchemeController/onlinePreview/**
+    - /programGuide/checkRepeat/exportCheckRepeat
     - /programGuide/tbGuide/downLoadFile/**
     - /programGuide/tbGuide/onlinePreview/**
     - /project/tbProjectLibrary/**
+    - /oa/oaArticleFile/onlinePreview/**
+    - /oa/oaArticle/downLoadFile/**
+    - /oa/oaContract/downLoadFile/**
+    - /oa/oaMeeting/downLoadFile/**
+  base:
+    - /admin/user/info
+    - /admin/menu/userMenu
+    - /admin/menu/userTree
+    - /admin/menu/allTree
+    - /project/tbProjectDict/**
+    - /oa/oaCalendarMemo/*
+    - /oa/oaNotice/indexOaNoticeList
+    - /admin/dept/tree
+    - /admin/dict/dictPage
 logging:
   config: classpath:logback.xml
