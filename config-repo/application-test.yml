@@ -3,9 +3,9 @@ jasypt:
   encryptor:
     password: lengleng
 fdfs:
-  file-host: http://192.168.1.149:8888/
+  file-host: http://49.4.12.152:8888/
   tracker-list:
-    - 192.168.1.149:22122
+    - 49.4.12.152:22122
 server:
   tomcat:
     max-threads: 500 # Maximum amount of worker threads.
@@ -17,11 +17,11 @@ spring:
       default-binder: kafka
       kafka: 
         binder:
-          zk-nodes: 192.168.1.141:2181
-          brokers: 192.168.1.141:9092
+          zk-nodes: 49.4.12.198:2181
+          brokers: 49.4.12.198:9092
   redis:
     remote: false        #cachecloud 获取
-    host: 192.168.1.93
+    host: 49.4.12.13
     port: 6666
     password: moshushi123
   http:
@@ -77,7 +77,7 @@ hystrix:
 #分布式事务管理LCN --txmanager事务管理器地址
 tm:
   manager: 
-    url: http://192.168.1.149:8899/tx/manager/    
+    url: http://192.168.1.8:8899/tx/manager/    
 
 #监控短点配置
 management:
@@ -91,10 +91,13 @@ endpoints:
 #自然语言处理配置
 nlp:
   root-path: /mss/HanLP
-  keyword-extract-num: 20
+#  root-path: E:/JavaSoft/hanlp
+  title-similar-threshold: 0.8
+  similar-threshold: 0.85
+  keyword-extract-num: 5
   custom-keyword-path: ${nlp.root-path}/data/keyword.txt
   word-vector:
     train-file-name: ${nlp.root-path}/data/test/test.txt
-    model-file-name: ${nlp.root-path}/hanlp/data/model/wordVector/word2vec.txt
+    model-file-name: ${nlp.root-path}/data/model/wordVector/word2vector.txt
   text-classfiy:
     model-file-name: ${nlp.root-path}/data/model/classification/classification-model.ser
