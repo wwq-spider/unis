@@ -1,6 +1,15 @@
 server:
   port: 4060
 spring:
+  data:
+    elasticsearch:
+      cluster-name: elasticsearch
+      cluster-nodes: 49.4.12.66:9300
+    solr:
+      host: http://192.168.1.150:8983/solr
+    mongodb:
+      uri: mongodb://192.168.1.8:30001
+      database: gssj
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
     driver-class-name: com.mysql.jdbc.Driver
