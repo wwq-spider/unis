@@ -10,10 +10,10 @@ spring:
     mongodb:
       uri: mongodb://192.168.1.8:30001
       database: gssj
-    elasticjob:
-      zookeeper:
-        server-lists: 49.4.12.198:2181
-        namespace: unis-daemon
+  elasticjob:
+    zookeeper:
+      server-lists: 49.4.12.198:2181
+      namespace: unis-daemon
 #   datasource:
 #     type: com.zaxxer.hikari.HikariDataSource
 #     driver-class-name: com.mysql.jdbc.Driver
