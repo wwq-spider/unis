@@ -1,0 +1,17 @@
+spring: 
+  data:
+    solr:
+      host: http://49.4.12.66:8983/solr
+    elasticsearch:
+      cluster-name: elasticsearch
+      cluster-nodes: 49.4.12.66:9300
+    mongodb:
+      uri: mongodb://10.138.30.3:30001
+      database: gssj
+log: 
+  index-name: unis_logs
+solr:
+  storage-url: http://49.4.12.66:8983/solr/unis-data
+  keywords-url: http://49.4.12.66:8983/solr/keywords
+  word-url: http://49.4.12.66:8983/solr/word
+  analysis-url: http://49.4.12.66:8983/solr/analysis
