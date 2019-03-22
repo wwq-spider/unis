@@ -37,6 +37,9 @@ auth:
   succ:
     redirect:
       url: http://10.138.30.17:3000/getToken?secret=dW5pczEyMzp1bmlzMTIz&callbackUrl=http://192.168.1.8:81/ncste/
+default:
+  redirect:
+    url: http://10.138.30.4/ncste
 urls:
   anon:
     - /authentication/**
