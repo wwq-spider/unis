@@ -33,7 +33,10 @@ unis:
       providerId: qq
       clientId: ENC(jYTHlVSN8p2C3KrLz40H7JJYZcQs3SAK)
       clientSecret: ENC(DmTyBXeNFG7Z6pooPCtDUMcI1MYTiO3ldaEOuVWmOTpgDVmyGMsI42hz6OM+0pEE)
-
+auth:
+  succ:
+    redirect:
+      url: http://10.138.30.17:3000/getToken?secret=dW5pczEyMzp1bmlzMTIz&callbackUrl=http://192.168.1.8:81/ncste/
 urls:
   anon:
     - /authentication/**
